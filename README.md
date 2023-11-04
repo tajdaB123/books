@@ -32,7 +32,7 @@ Logging: Detailed logs are available in the logs folder, providing insights into
 
 **Example Usage**
 
-dotnet run
+dotnet Books.dll
 
 Type 'help' for instructions or provide a folder path to save files.
 
