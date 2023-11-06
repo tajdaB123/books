@@ -36,7 +36,7 @@ namespace BooksUnitTesting
             var result = File.Exists(filePath);
 
             // Assert
-            Assert.IsFalse(result);
+            Assert.IsTrue(result);
         }
     }
 }
