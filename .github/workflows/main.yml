@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest  # Specifies that the job runs on Windows
 
     steps:
       - name: Checkout code
@@ -20,6 +20,12 @@ jobs:
         uses: actions/setup-dotnet@v2
         with:
           dotnet-version: 6.0.100  # You can specify the .NET Core version you need
-      - name: Debug repository contents
-        run: | 
-             ls -R pwd
+
+      - name: Restore dependencies
+        run: dotnet restore books/Books/Books.csproj
+
+      - name: Build main application
+        run: dotnet build books/Books/Books.csproj --configuration Release
+
+      - name: Test unit testing project
+        run: dotnet test books/BooksUnitTesting/UnitTesting.csproj --configuration Release
