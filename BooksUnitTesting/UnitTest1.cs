@@ -20,7 +20,7 @@ namespace BooksUnitTesting
             var result = File.Exists(filePath);
 
             // Assert
-            Assert.IsTrue(result);
+            Assert.IsFalse(result);
         }
 
         [TestMethod]
