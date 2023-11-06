@@ -28,4 +28,4 @@ jobs:
         run: dotnet build Books/Books.csproj --configuration Release
 
       - name: Test unit testing project
-        run: dotnet test BooksUnitTesting/UnitTesting.csproj --configuration Release
+        run: dotnet test BooksUnitTesting/BooksUnitTesting.csproj --configuration Release
