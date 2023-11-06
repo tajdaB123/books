@@ -29,3 +29,6 @@ jobs:
 
       - name: Test unit testing project
         run: dotnet test ./books/BooksUnitTesting/UnitTesting.csproj --configuration Release
+      - name: Debug repository contents
+        run: | 
+             ls -R pwd
