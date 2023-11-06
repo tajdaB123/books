@@ -32,7 +32,7 @@ Logging: Detailed logs are available in the logs folder, providing insights into
 
 **Example Usage**
 
-Run workflow file main.yml script to build the project and get executable file (Books.dll). Also Unit tests will be build and executed.
+Execute workflow file main.yml script to build the project and (Books.dll). Also Unit tests will be build and executed.
 
 Run dotnet Books.dll
 
